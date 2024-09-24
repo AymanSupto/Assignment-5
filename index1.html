@@ -19,40 +19,48 @@
 </head>
 
 <body>
-    <section class="bg-[#F9F7F3] lg:py-10 lg:mb-20">
-        <div class="lg:w-4/5 lg:mx-auto lg:flex lg:justify-between lg:items-center">
-            <button id="home" class="btn bg-[#B4F461] lg:text-xl lg:px-8">Home</button>
-            <div class="lg:flex justify-center items-center ">
-                <div><img src="assets/logo.png" alt=""></div>
-                <h3 class="lg:font-bold lg:text-xl lg:mx-3">Donate Bangladesh</h3>
-            </div>
-            <div class="lg:flex justify-center items-center">
-                <div><img class="border-dashed border-2 border-gray-200" src="assets/coin.png" alt="">
+    <header>
+        <section class="bg-[#F9F7F3] lg:py-10 py-5">
+            <div class="lg:w-4/5 w-11/12 mx-auto flex justify-between items-center">
+                <button id="home" class="btn bg-[#B4F461] lg:text-xl text-sm lg:px-8">Home</button>
+                <div class="lg:flex justify-center items-center ">
+                    <div class="hidden lg:block"><img src="assets/logo.png" alt=""></div>
+                    <h3 class="font-bold lg:text-xl text-lg lg:mx-3">Donate Bangladesh</h3>
                 </div>
-                <h3 class="lg:mx-3 lg:text-xl">5500 BDT</h3>
+                <div class="lg:flex justify-center items-center">
+                    <div><img class="lg:border-dashed lg:border-2 lg:border-gray-200" src="assets/coin.png" alt="">
+                    </div>
+                    <h3 class="lg:mx-3 lg:text-xl text-sm">5500 BDT</h3>
+                </div>
             </div>
+        </section>
+        <div id="alternate" class="flex justify-center items-center mt-16">
+            <button id="donation-btn" class="btn bg-[#B4F461] hover:bg-[#B4F461] lg:text-xl lg:px-8">Donation</button>
+            <button id="history-btn"
+                class="btn btn-outline hover:bg-white hover:text-black lg:text-xl lg:font-semibold opacity-70 lg:px-6 mx-5">History</button>
         </div>
-    </section>
-    <div class="lg:mb-20">
-        <p class="text-5xl font-bold lg:w-4/5 lg:mx-auto">Important FAQ <i class="fa-solid fa-question"></i>
+    </header>
+    
+    <div class="lg:mb-20 mt-8">
+        <p class="lg:text-5xl text-4xl font-bold lg:w-4/5 w-11/12 mx-auto">Important FAQ <i class="fa-solid fa-question"></i>
         </p>
     </div>
 
-    <div class="collapse collapse-arrow border-solid border-2 lg:w-4/5 lg:mx-auto rounded-none">
+    <div class="collapse collapse-arrow border-solid border-2 lg:w-4/5 w-11/12 mx-auto rounded-none mt-8">
         <input type="radio" name="my-accordion-2" checked="checked" />
         <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
         <div class="collapse-content">
             <p>DOM works as a broker between HTML and JAVASCRIPT</p>
         </div>
     </div>
-    <div class="collapse collapse-arrow border-solid border-2 lg:w-4/5 lg:mx-auto rounded-none ">
+    <div class="collapse collapse-arrow border-solid border-2 lg:w-4/5 w-11/12 mx-auto rounded-none ">
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium">How do you an Element form the DOM?</div>
         <div class="collapse-content">
             <p>we can use properties to select element , to choose a particular element use getElementById() , or to get several elements use getElementByClassName() or to get common tag names in the whole HTML use getElementByTagName()</p>
         </div>
     </div>
-    <div class="collapse collapse-arrow border-solid border-2 lg:w-4/5 lg:mx-auto rounded-none">
+    <div class="collapse collapse-arrow border-solid border-2 lg:w-4/5 w-11/12 mx-auto rounded-none">
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium">What event delegation in the contest of DOM, and why is it useful?</div>
         <div class="collapse-content">
@@ -60,7 +68,7 @@
         </div>
     </div>
 
-    <div class="collapse collapse-arrow border-solid border-2 lg:w-4/5 lg:mx-auto rounded-none">
+    <div class="collapse collapse-arrow border-solid border-2 lg:w-4/5 w-11/12 mx-auto rounded-none">
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM</div>
         <div class="collapse-content">
