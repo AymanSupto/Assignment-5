@@ -16,6 +16,13 @@ getElement('donate-1')
             let moneyAvailable = availableMoney('available-amount')
             getElement('donation-1').innerText = amount + yetDonated;
             getElement('available-amount').innerText = moneyAvailable - amount
+
+            let s = document.createElement('section')
+            let p = document.createElement('p')
+            p.innerText = value('value-1') + 'Taka is Donated for' + text('text-1')
+            let child1 = s.appendChild(p)
+            getElement('history').appendChild(child1)
+            
         }
         else {
             alert('invalid input')
@@ -31,6 +38,12 @@ getElement('donate-2')
             let moneyAvailable = availableMoney('available-amount')
             getElement('donation-2').innerText = amount + yetDonated;
             getElement('available-amount').innerText = moneyAvailable - amount
+
+            let s = document.createElement('section')
+            let p = document.createElement('p')
+            p.innerText = value('value-2') + 'Taka is Donated for' + text('text-2')
+            let child2 = s.appendChild(p)
+            getElement('history').appendChild(child2)
         }
         else {
             alert('invalid input')
@@ -45,6 +58,12 @@ getElement('donate-3')
             let moneyAvailable = availableMoney('available-amount')
             getElement('donation-3').innerText = amount + yetDonated;
             getElement('available-amount').innerText = moneyAvailable - amount
+
+            let s = document.createElement('section')
+            let p = document.createElement('p')
+            p.innerText = value('value-3') + 'Taka is Donated for' + text('text-3')
+            let child3 = s.appendChild(p)
+            getElement('history').appendChild(child3)
         }
         else {
             alert('invalid input')
@@ -52,7 +71,16 @@ getElement('donate-3')
     })
 
 
-
+getElement('history-btn').
+    addEventListener('click', function () {
+        hidden('hide')
+        notHidden('history')
+    })
+getElement('donation-btn')
+    .addEventListener('click', function () {
+        hidden('history')
+        notHidden('hide')
+    })
 
 document.getElementById('blog').addEventListener('click', function () {
     window.location.href = 'index1.html';
