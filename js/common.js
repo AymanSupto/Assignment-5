@@ -29,3 +29,11 @@ function text(id){
 function value(id){
     return document.getElementById(id).value
 }
+function date(){
+    let dateInput = new Date()
+    return dateInput;  
+}
+function months(){
+    let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+    return months
+}

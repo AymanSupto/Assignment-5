@@ -17,15 +17,19 @@ getElement('donate-1')
             getElement('donation-1').innerText = amount + yetDonated;
             getElement('available-amount').innerText = moneyAvailable - amount
 
-            let s = document.createElement('section')
+            let section = document.createElement('section')
             let p = document.createElement('p')
             p.innerText = value('value-1') + 'Taka is Donated for' + text('text-1')
-            let child1 = s.appendChild(p)
+            let h1 = document.createElement('h1')
+            h1.innerText = 'Date:' + ' ' + date().getDate() + ' ' + months()[date().getMonth()] + ' ' + date().getFullYear() + ' ' + date().toTimeString()
+            let child1 = section.appendChild(p)
+            let ch1 = section.appendChild(h1)
             getElement('history').appendChild(child1)
-            
+            getElement('history').appendChild(ch1)
         }
         else {
             alert('invalid input')
+            hidden('my_modal_1')
         }
     })
 
@@ -39,14 +43,19 @@ getElement('donate-2')
             getElement('donation-2').innerText = amount + yetDonated;
             getElement('available-amount').innerText = moneyAvailable - amount
 
-            let s = document.createElement('section')
+            let section = document.createElement('section')
             let p = document.createElement('p')
             p.innerText = value('value-2') + 'Taka is Donated for' + text('text-2')
-            let child2 = s.appendChild(p)
+            let h1 = document.createElement('h1')
+            h1.innerText = 'Date:' + ' ' + date().getDate() + ' ' + months()[date().getMonth()] + ' ' + date().getFullYear() + ' ' + date().toTimeString()
+            let child2 = section.appendChild(p)
+            let ch2 = section.appendChild(h1)
             getElement('history').appendChild(child2)
+            getElement('history').appendChild(ch2)
         }
         else {
             alert('invalid input')
+            hidden('my_modal_1')
         }
     })
 
@@ -59,14 +68,19 @@ getElement('donate-3')
             getElement('donation-3').innerText = amount + yetDonated;
             getElement('available-amount').innerText = moneyAvailable - amount
 
-            let s = document.createElement('section')
+            let section = document.createElement('section')
             let p = document.createElement('p')
             p.innerText = value('value-3') + 'Taka is Donated for' + text('text-3')
-            let child3 = s.appendChild(p)
+            let h1 = document.createElement('h1')
+            h1.innerText = 'Date:' + ' ' + date().getDate() + ' ' + months()[date().getMonth()] + ' ' + date().getFullYear() + ' ' + date().toTimeString()
+            let child3 = section.appendChild(p)
+            let ch3 = section.appendChild(h1)
             getElement('history').appendChild(child3)
+            getElement('history').appendChild(ch3)
         }
         else {
             alert('invalid input')
+            hidden('my_modal_1')
         }
     })
 
