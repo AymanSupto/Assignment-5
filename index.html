@@ -23,9 +23,7 @@
             margin-bottom: 0.5rem;
         }
 
-        .blurred{
-            filter: blur(5px);
-        }
+        
     </style>
 
 </head>
@@ -174,19 +172,6 @@
     </section>
     <script src="js/common.js"></script>
     <script src="js/file.js"></script>
-    <script>
-        let headerContent = document.getElementById('header').offsetHeight
-        let mainContent = document.getElementById('hide')
-
-        window.addEventListener('scroll',function(){
-            if(window.scrollY > headerContent){
-                mainContent.classList.add('blurred')
-            }
-            else{
-                mainContent.classList.remove('blurred')
-            }
-        })
-    </script>
 </body>
 
 </html>
